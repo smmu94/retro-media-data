@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Monoton, Audiowide  } from "next/font/google";
 import "./globals.css";
 import NavBar from "../src/components/navbar/index";
 
-const geistSans = localFont({
-  src: "./utils/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const titlesFont = Monoton({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-titles",
 });
-const geistMono = localFont({
-  src: "./utils/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const bodyFont = Audiowide ({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
@@ -26,11 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div>
-          <NavBar />
-          {children}
-        </div>
+      <body className={`${titlesFont.variable} ${bodyFont.variable}`}>
+        <NavBar />
+        {children}
+        <footer>Footer</footer>
       </body>
     </html>
   );
