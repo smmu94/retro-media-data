@@ -8,10 +8,10 @@ export enum Category {
 };
   
 export const CategoryTranslations: { [key in Category]: string } = {
-    [Category.HOME]: "Inicio",
-    [Category.MUSIC]: "Música",
-    [Category.MOVIES]: "Películas",
-    [Category.SERIES]: "Series",
-    [Category.POSTERS]: "Pósters",
+    [Category.HOME]: "nav.home",
+    [Category.MUSIC]: "nav.music",
+    [Category.MOVIES]: "nav.movies",
+    [Category.SERIES]: "nav.series",
+    [Category.POSTERS]: "nav.posters",
 };
   

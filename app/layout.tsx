@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
-import { Monoton, Audiowide  } from "next/font/google";
+import { Monoton, Audiowide } from "next/font/google";
 import "./globals.css";
 import NavBar from "../src/components/navbar/index";
 
 const titlesFont = Monoton({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: "400",
   variable: "--font-titles",
+  display: "swap",
 });
 
-const bodyFont = Audiowide ({
+const bodyFont = Audiowide({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: "400",
   variable: "--font-body",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -22,14 +24,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={`${titlesFont.variable} ${bodyFont.variable}`}>
         <NavBar />
-        {children}
+        <main>{children}</main>
         <footer>Footer</footer>
       </body>
     </html>

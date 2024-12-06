@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import AudioPlayer from "@/modules/home/components/audioPlayer";
 import styles from "./home.module.sass";
 import { Category, CategoryTranslations } from "@/constants/categories";
+import useTranslation from "next-translate/useTranslation";
 
 const Home = () => {
+  const { t } = useTranslation("common");
   const [expandedCard, setExpandedCard] = useState<Category>(Category.HOME);
 
   const handleToggle = (index: Category): void => {
@@ -23,7 +25,7 @@ const Home = () => {
             }`}
             onClick={() => handleToggle(index)}
           >
-            <p>{CategoryTranslations[index]} {expandedCard === index ? "Details" : ""}</p>
+            <p>{t(CategoryTranslations[index])} {expandedCard === index ? "Details" : ""}</p>
           </div>
         ))}
       </div>

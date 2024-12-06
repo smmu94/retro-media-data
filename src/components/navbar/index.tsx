@@ -1,26 +1,40 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./navbar.module.sass";
 import Image from "next/image";
 import { Category, CategoryTranslations } from "@/constants/categories";
 import routes from "@/utils/routes";
+import useTranslation from "next-translate/useTranslation";
 
 export default function Navbar() {
+  const { t } = useTranslation("common");
   return (
     <div className={styles.wrapper}>
       <Image
         src="/assets/logo.png"
         alt="logo"
+        placeholder="blur"
+        blurDataURL="/assets/logo.png"
         width={120}
         height={120}
       />
       <nav className={styles.nav}>
+        <select>
+          <option key="en" value="en">
+            EN
+          </option>
+          <option key="es" value="es">
+            ES
+          </option>
+        </select>
         <Link
           href={{
             pathname: routes.home.main,
           }}
           className={styles.link}
         >
-          {CategoryTranslations[Category.HOME]}
+          {t(CategoryTranslations[Category.HOME])}
         </Link>
         <Link
           href={{
@@ -28,7 +42,7 @@ export default function Navbar() {
           }}
           className={styles.link}
         >
-          {CategoryTranslations[Category.MUSIC]}
+          {t(CategoryTranslations[Category.MUSIC])}
         </Link>
         <Link
           href={{
@@ -36,7 +50,7 @@ export default function Navbar() {
           }}
           className={styles.link}
         >
-          {CategoryTranslations[Category.MOVIES]}
+          {t(CategoryTranslations[Category.MOVIES])}
         </Link>
         <Link
           href={{
@@ -44,7 +58,7 @@ export default function Navbar() {
           }}
           className={styles.link}
         >
-          {CategoryTranslations[Category.SERIES]}
+          {t(CategoryTranslations[Category.SERIES])}
         </Link>
         <Link
           href={{
@@ -52,7 +66,7 @@ export default function Navbar() {
           }}
           className={styles.link}
         >
-          {CategoryTranslations[Category.POSTERS]}
+          {t(CategoryTranslations[Category.POSTERS])}
         </Link>
       </nav>
     </div>

@@ -1,0 +1,14 @@
+{
+    "locales": ["en", "es"],
+    "defaultLocale": "en",
+    "localeDetection": false,
+    "ssr": true,
+    "pages": {
+      "*": ["common"],
+      "/": ["home"],
+      "/music": ["music"],
+      "/movies": ["movies"],
+      "/series": ["series"],
+      "/posters": ["posters"]
+    }
+  }
