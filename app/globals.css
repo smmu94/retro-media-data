@@ -1,5 +1,5 @@
 :root {
-  --background: linear-gradient(45deg, #ff00ff, #00bfff, #ff00ff);
+  --background: url("../public/assets/imgs/background.jpeg");
   --foreground: #171717;
 }
 
@@ -18,13 +18,16 @@ html, body {
 }
 
 body {
+  min-height: 100vh;
   color: var(--foreground);
-  background: var(--background);
+  background-image: var(--background);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(45deg, #ff00ff, #00bfff, #ff00ff);
-  background-size: 300% 300%;
-  animation: gradientShift 10s ease infinite;
+  background-size: 100% 100%;
+  animation: gradientShift 8s ease infinite
 }
 
 @keyframes gradientShift {
@@ -39,11 +42,11 @@ body {
   }
 }
 
-h1, h2, h3, nav {
+h1, h2, h3, nav, select {
   font-family: var(--font-titles), sans-serif;
 }
 
-body, p, span, footer {
+body, p, span, footer, button {
   font-family: var(--font-body), sans-serif;
 }
 

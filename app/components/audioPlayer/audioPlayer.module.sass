@@ -1,0 +1,76 @@
+$border: 0.2rem solid black
+$neon-color: #ff00ff
+
+.wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  // border: $border
+  width: 80%
+  height: 80%
+  border-radius: 1rem
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), inset 0 0 15px $neon-color
+  background: black
+
+  .container
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 0.8rem 0.8rem 0 0
+    height: 75%
+    width: 100%
+  
+    .cassette
+      width: 90%  
+      height: auto  
+      filter: drop-shadow(0 0 10px $neon-color)
+  
+  .lyrics
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding: 0.5rem
+    background: linear-gradient(135deg, #f9dc5c, #f9844a)
+    color: black
+    filter: drop-shadow(0 0 10px $neon-color)
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow-x: hidden
+
+    .text  
+      &.animate  
+        animation: marquee 10s linear infinite  
+        animation-play-state: running
+
+    @keyframes marquee  
+      from  
+        transform: translateX(100%)  
+      to  
+        transform: translateX(-100%)
+
+  .controls
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 0.5rem
+    border-radius: 0 0 0.8rem 0.8rem
+    width: 100%
+    height: 20%
+    padding-top: 0.5rem
+
+    .controlButton  
+      background: gray
+      padding: 0.5rem 1rem  
+      border-radius: 50%  
+      cursor: pointer  
+      transition: all 0.3s ease  
+
+      &:hover  
+        transform: scale(1.1)  
+
+      .icon  
+        font-size: 1.5rem  
+        color: #FFFFFF
+        filter: drop-shadow(0 0 10px $neon-color)
