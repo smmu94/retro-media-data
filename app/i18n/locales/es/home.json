@@ -1,0 +1,24 @@
+{
+    "cards": {
+        "home": {
+            "title": "Entra en los 80s",
+            "description": "Redescubre la magia de la cultura pop de los años 80. Desde luces de neón hasta moda icónica y tendencias inolvidables, sumérgete en una era vibrante."
+        },
+        "movies": {
+            "title": "Cine de los 80",
+            "description": "Revive los maravillosos momentos cinematográficos de los 80. Desde clásicos atemporales hasta películas de culto, sumérgete en una era dorada de narración."
+        },
+        "music": {
+            "title": "El Ritmo de los 80s",
+            "description": "Redescubre los ritmos de los 80. Desde hits de synth-pop hasta himnos de rock, déjate llevar por los sonidos de esta década icónica."
+        },
+        "series": {
+            "title": "Pantallas de los 80s",
+            "description": "Adéntrate en el mundo de las series de los 80. Desde dramas emocionantes hasta comedias memorables, revive los programas que definieron una generación."
+        },
+        "games": {
+            "title": "Una ventana al pasado gamer",
+            "description": "Experimenta la emoción de los videojuegos de los 80. Desde aventuras pixeladas hasta leyendas arcade, explora los juegos que lo iniciaron todo."
+        }
+    }
+}

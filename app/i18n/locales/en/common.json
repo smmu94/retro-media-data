@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Home",
+    "movies": "Movies",
+    "music": "Music",
+    "games": "Games",
+    "series": "Series"
+  },
+  "language": {
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "goTo": "Go to",
+  "footer": {
+    "description": "All Rights Reserved | Created by Stephanie Morales"
+  }
+}
+  

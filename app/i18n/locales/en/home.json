@@ -1,0 +1,24 @@
+{
+    "cards": {
+       "home": {
+            "title": "Step Into the 80s",
+            "description": "Rediscover the magic of 80s pop culture. From neon lights to iconic fashion and unforgettable trends, dive into a vibrant era!"
+        },
+        "movies": {
+            "title": "80s Cinema",
+            "description": "Relive the cinematic wonders of the 80s. From timeless blockbusters to cult classics, immerse yourself in a golden age of storytelling!"
+        },
+        "music": {
+            "title": "The Rhythm of the 80s",
+            "description": "Rediscover the beats of the 80s. From synth-pop hits to rock anthems, let the sounds of this iconic decade take you back in time"
+        },
+        "series": {
+            "title": "80s screens",
+            "description": "Step into the world of 80s TV. From gripping dramas to laugh-out-loud sitcoms, revisit the shows that defined a generation!"
+        },
+        "games": {
+            "title": "A window to the gamer past",
+            "description": "Experience the thrill of 80s gaming. From pixelated adventures to arcade legends, explore the games that started it all!"
+        }
+    }
+}
