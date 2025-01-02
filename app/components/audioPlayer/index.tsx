@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useRef } from "react";
 import styles from "./audioPlayer.module.sass";
 import cassette from "../../../public/assets/cassete_pink.svg";
@@ -111,8 +111,8 @@ export const AudioPlayer = () => {
           <FontAwesomeIcon icon={faForward} className={styles.icon} />
         </button>
       </div>
-      <audio ref={audioRef}>
-        <source src={tracks[currentTrackIndex].mp3} onEnded={handleAudioEnded}/>
+      <audio ref={audioRef} onEnded={handleAudioEnded}>
+        <source src={tracks[currentTrackIndex].mp3} />
       </audio>
     </div>
   );
